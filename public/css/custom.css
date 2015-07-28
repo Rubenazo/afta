@@ -1,0 +1,41 @@
+
+
+/*****************************************************************/
+
+#frontpage {
+	height: 100%;
+	background-image: url('../img/landingpage.jpg');
+	color: #2E3958;
+}
+
+#frontpage a {
+	text-decoration: none;
+	color: #2E3958;
+}
+
+#frontpage h1 {
+	font-size: 3em;
+}
+
+#frontpage h2 {
+	font-size: 4em;
+	text-align: left;
+	font-family: curier new;
+	font-style: italic;
+	margin: 4% 8%;
+}
+
+#frontpage ul {
+	margin-top: 5%;
+}
+
+#frontpage ul img {
+	width: 40%;
+	height: 40%;
+}
+
+#frontpage div > img {
+	width: 55%;
+}
+
+/*****************************************************************/
