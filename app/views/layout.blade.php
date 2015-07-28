@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="{{ $lang }}">
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -51,8 +51,8 @@
                 </div>
                 <div class="col-xs-6">
                     <span><br/>¿Quiere cambiar el idioma?</span>
-                    {{ HTML::image('social/spain.png') }}
-                    {{ HTML::image('social/usa.png') }}
+                    {{ HTML::image('img/social/spain.png') }}
+                    {{ HTML::image('img/social/usa.png') }}
                 </div>
             </div>
 

@@ -35,13 +35,13 @@
                 </div>
                 <ul class="list-inline">
                     <li>
-                        <a href="{{ URL::to('home/en') }}">
+                        <a href="home">
                             <h4>English</h4>
                             <img src="img/social/usa.png">
                         </a>
                     </li>
                     <li>
-                        <a href="{{ URL::to('home/es') }}">
+                        <a href="home">
                             <h4>Español</h4>
                             <img src="img/social/spain.png">
                         </a>

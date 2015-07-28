@@ -18,4 +18,4 @@ Route::get('/', function()
 	->with('title',$title);
 });
 
-Route::get('home/{lang}', 'HomeController@showHome');
+Route::get('home', 'HomeController@showHome');
