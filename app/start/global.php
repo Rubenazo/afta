@@ -79,3 +79,14 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| Set Language
+|--------------------------------------------------------------------------
+*/
+
+if (Session::has('language'))
+{
+	App::setlocale(Session::get('language'));
+}

@@ -30,18 +30,18 @@
             <div class="text-center">
                 <h2>Welcome to</h2>
                 <div>
-                    <img src="img/logo.svg">
-                    <h1>Aviation Flight Training Academy</h1>
+                    <img src="img/logo.svg" alt="Aviation Flight Training Academy">
+                    <h1>Aim for the Sky and your Future will Soar</h1>
                 </div>
                 <ul class="list-inline">
                     <li>
-                        <a href="home">
+                        <a href="home/en">
                             <h4>English</h4>
                             <img src="img/social/usa.png">
                         </a>
                     </li>
                     <li>
-                        <a href="home">
+                        <a href="home/es">
                             <h4>Español</h4>
                             <img src="img/social/spain.png">
                         </a>

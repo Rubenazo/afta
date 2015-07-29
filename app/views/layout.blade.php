@@ -20,6 +20,10 @@
         {{HTML::script('js/bootstrap.min.js')}}
         {{HTML::style('css/custom.css')}}
         {{HTML::script('js/custom.js')}}
+
+        {{HTML::style('slick/slick.css')}}
+        {{HTML::style('slick/slick-theme.css')}}
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -29,17 +33,21 @@
         <div class="container">
 
             <div class="header">
+                <img id="logo" src="img/logo-1.png">
                 <ul class="nav nav-pills pull-right">
-                    <li>{{ HTML::link('/','Home') }}</li>
-                    <li>{{ HTML::link('/','About Us') }}</li>
+                    <li>{{ HTML::link('home','Home') }}</li>
                     <li>{{ HTML::link('/','Training Programs') }}</li>
                     <li>{{ HTML::link('/','Gallery') }}</li>
                     <li>{{ HTML::link('/','Contact Us') }}</li>
+                    <li>{{ HTML::link('/','Find Us') }}</li>
                 </ul>
-                <img id="logo" src="img/logo-1.png">
             </div>
 
+        <div class="content">
+        
             @yield('content')
+
+        </div>
 
             <div class="footer">
                 <div class="col-xs-6">
@@ -62,6 +70,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        {{HTML::script('slick/slick.min.js')}}
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

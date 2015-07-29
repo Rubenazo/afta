@@ -18,4 +18,5 @@ Route::get('/', function()
 	->with('title',$title);
 });
 
+Route::get('home/{lang}', 'HomeController@language');
 Route::get('home', 'HomeController@showHome');

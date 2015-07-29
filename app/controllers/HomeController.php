@@ -9,4 +9,9 @@ class HomeController extends BaseController {
 		->with('title',$title);
 	}
 
+	public function language($lang) {
+		Session::set('language',$lang);
+		return Redirect::to('home');
+	}
+
 }

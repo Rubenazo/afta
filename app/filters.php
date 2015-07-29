@@ -88,15 +88,3 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
-
-/*
-|--------------------------------------------------------------------------
-| Language detection Filter
-|--------------------------------------------------------------------------
-|
-*/
-
-Route::filter('lang', function()
-{
-	
-});
