@@ -1,6 +1,6 @@
-
-// Slick Slider //
 $(document).ready(function(){
+
+	// Slick Slider //
     $('.slider').slick({
     	autoplay: true,
  		autoplaySpeed: 3500,
@@ -8,11 +8,17 @@ $(document).ready(function(){
 
 ///////////////////////////////////////////////////////////////
 
-	$('.enlace').click(function(event) {
+	// Modal //
+	$('.program').click(function(event) {
 		$('.pizza').attr('href',$(this).data('route'));
 		$('.info').html($(this).data('info'));
 		$('.price').html($(this).data('price'));
 		$('.modal-title').html($(this).data('title'));
 	});
+
+///////////////////////////////////////////////////////////////
+
+	// Material Design for Bootstrap //
+	$.material.init()	
 });
 

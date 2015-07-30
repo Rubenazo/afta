@@ -2,6 +2,19 @@
 
 return array(
 
-	'pizza' => 'tu heztas komiendo pisa',
+	"header"   => array(
+		"Inicio",
+		"Programas",
+		"Galeria",
+		"Contactanos",
+		"Localizanos",
+	),
 
+	"programs" => array(
+		"Programas de Entrenamiento",
+		"Privado",
+		"Corporativo",
+		"Comercial",
+		"Entusiasta",
+	),	
 );

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="{{ $lang }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -24,8 +24,13 @@
         {{HTML::style('slick/slick.css')}}
         {{HTML::style('slick/slick-theme.css')}}
 
+        {{HTML::style('css/material.min.css')}}
+        {{HTML::style('css/material-fullpalette.min.css')}}
+        {{HTML::style('css/ripples.min.css')}}
+        {{HTML::style('css/roboto.min.css')}}
+
     </head>
-    <body>
+    <body id="homepage">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -33,13 +38,22 @@
         <div class="container">
 
             <div class="header">
-                <img id="logo" src="img/logo-1.png">
-                <ul class="nav nav-pills pull-right">
-                    <li>{{ HTML::link('home','Home') }}</li>
-                    <li>{{ HTML::link('/','Training Programs') }}</li>
-                    <li>{{ HTML::link('/','Gallery') }}</li>
-                    <li>{{ HTML::link('/','Contact Us') }}</li>
-                    <li>{{ HTML::link('/','Find Us') }}</li>
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="{{ URL::to('/') }}"><img id="logo" src="img/logo-1.png"></a></li>
+                    <li>{{ HTML::link('#intro',Lang::get('text.header.0')) }}</li>
+                    <li>{{ HTML::link('#programs',Lang::get('text.header.1')) }}</li>
+                    <li>{{ HTML::link('#gallery',Lang::get('text.header.2')) }}</li>
+                    <li>{{ HTML::link('#contact',Lang::get('text.header.3')) }}</li>
+                    <li>{{ HTML::link('#',Lang::get('text.header.4')) }}</li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li><a href=""><img src="img/social/facebook.png"></a></li>
+                    <li><a href=""><img src="img/social/twitter.png"></a></li>
+                    <li><a href=""><img src="img/social/linkedin.png"></a></li>
+                    <li><a href=""><img src="img/social/youtube.png"></a></li>
                 </ul>
             </div>
 
@@ -58,9 +72,9 @@
                     </address>
                 </div>
                 <div class="col-xs-6">
-                    <span><br/>¿Quiere cambiar el idioma?</span>
-                    {{ HTML::image('img/social/spain.png') }}
-                    {{ HTML::image('img/social/usa.png') }}
+                    <span>¿Quiere cambiar el idioma?</span>
+                    <a href="home/es">{{ HTML::image('img/social/spain.png') }}</a>
+                    <a href="home/en">{{ HTML::image('img/social/usa.png') }}</a>
                 </div>
             </div>
 
@@ -70,7 +84,10 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
         {{HTML::script('slick/slick.min.js')}}
+        {{HTML::script('js/material.min.js')}}
+        {{HTML::script('js/ripples.min.js')}}
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
