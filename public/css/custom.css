@@ -4,7 +4,8 @@
 
 #about {
 	text-align: center;
-	margin-bottom: 10%;
+	overflow: auto;
+	margin-bottom: 5%;
 }
 
 #contact div {
@@ -53,17 +54,18 @@
 }
 
 #gallery {
-	margin-top:58%;
 	margin-bottom: 10%;
 }
 
 #homepage {
 	padding-top: 10%;
+	padding-bottom: 0;
 }
 
 #programs {
 	text-align: center;
-	margin-top: 32%;
+	overflow: auto;
+	margin-bottom: 5%;
 }
 
 
@@ -71,6 +73,11 @@
 /*****************************************************************
 	CLASSES SECTION
 *****************************************************************/
+
+.footer {
+	background-color: white;
+	overflow: auto;
+}
 
 .footer img {
 	width: 10%;
@@ -113,8 +120,14 @@
 .social ul {
 	list-style: none;
 	position: fixed;
+	padding-left: 0;
 	z-index: 5;
 	right: 0;
+}
+
+.well {
+	width: 45%;
+	margin-left: 5%;
 }
 
 /*****************************************************************

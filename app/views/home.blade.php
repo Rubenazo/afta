@@ -25,6 +25,14 @@
 			<img src="img/social/usa.png">
 			<p>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</p>
 		</div>
+		<div style="margin-top:20%"> 
+			<div class="col-xs-6">
+				<h2>Nuestros Valores</h2>
+			</div>
+			<div class="col-xs-6">
+				<i>¿Quieres Conocernos Mejor <spam><img src="img/social/help.png" style="width:5%;"></spam></i>
+			</div>
+		</div>
 	</div>
 
 	<div id="programs">
@@ -87,17 +95,50 @@
 	</div>
 
 	<div id="gallery">
+		
 		<h2 class="text-center">Galeria</h2>
+		<!--
+		<div class="slider-for">
+			<div>{{ HTML::image('img/commercial.jpg') }}<h4>Pizza</h4></div>
+			<div>{{ HTML::image('img/corporate.jpg') }}</div>
+			<div>{{ HTML::image('img/enthusiast.jpg') }}</div>	
+			<div>{{ HTML::image('img/private.jpg') }}</div>	
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/VZXJLQntCP0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/64FrYGRrKVY" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/eVTXPUF4Oz4" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/R40wAZxMsTg" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+		<div class="slider-nav">
+			<div>{{ HTML::image('img/commercial.jpg') }}</div>
+			<div>{{ HTML::image('img/corporate.jpg') }}</div>
+			<div>{{ HTML::image('img/enthusiast.jpg') }}</div>	
+			<div>{{ HTML::image('img/private.jpg') }}</div>	
+			<div>{{ HTML::image('http://img.youtube.com/vi/VZXJLQntCP0/1.jpg') }}</div>
+			<div>{{ HTML::image('http://img.youtube.com/vi/64FrYGRrKVY/1.jpg') }}</div>
+			<div>{{ HTML::image('http://img.youtube.com/vi/eVTXPUF4Oz4/1.jpg') }}</div>	
+			<div>{{ HTML::image('http://img.youtube.com/vi/R40wAZxMsTg/1.jpg') }}</div>	
+		</div>
+		-->
 	</div>
 
 	<div id="contact">
+		
 		<h2 class="text-center">Contactenos</h2>
+		
 		<div class="col-xs-6">
-			<a class="twitter-timeline"  href="https://twitter.com/Aftapilot" data-widget-id="626862459786252288">Tweets por el @Aftapilot.</a>
+			<a class="twitter-timeline" href="https://twitter.com/Aftapilot" data-widget-id="626862459786252288">Tweets por el @Aftapilot.</a>
             <script>
             	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-            </script>
-          
+            </script>    
 		</div>
 
 		<div class="col-xs-6 well bs-component well-material-light-blue-900">

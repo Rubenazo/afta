@@ -40,7 +40,7 @@
             <div class="header">
                 <ul class="nav nav-pills nav-justified">
                     <li><a href="{{ URL::to('/') }}"><img id="logo" src="img/logo-1.png"></a></li>
-                    <li>{{ HTML::link('#intro',Lang::get('text.header.0')) }}</li>
+                    <li>{{ HTML::link('#',Lang::get('text.header.0')) }}</li>
                     <li>{{ HTML::link('#programs',Lang::get('text.header.1')) }}</li>
                     <li>{{ HTML::link('#gallery',Lang::get('text.header.2')) }}</li>
                     <li>{{ HTML::link('#contact',Lang::get('text.header.3')) }}</li>
